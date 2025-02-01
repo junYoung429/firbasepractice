@@ -12,6 +12,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">사과마켓</a>
+      <span class="ms-auto mx-2" id="userName">유저이름</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,19 +36,35 @@
   </nav>
 
   <div class="container mt-3">
-    <input type="text" class="form-control mt-2" id="title" placeholder="title">
-    <textarea class="form-control mt-2" id="content">content</textarea>
-    <input type="text" class="form-control mt-2" id="price" placeholder="price">
-    <input class="form-control mt-2" type="file" id="image">
-    <button class="btn btn-danger mt-3" id="send">올리기</button>
-  </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="name" id="name-new">
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="email" id="email-new">
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control" placeholder="pw" id="pw-new">
+    </div>
+    <button type="submit" class="btn btn-primary" id="register">가입하기</button>
+ </div>
+
+ <div class="container mt-3">
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="email" id="email">
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control" placeholder="pw" id="pw">
+    </div>
+    <button type="submit" class="btn btn-primary" id="login">로그인하기</button>
+    <button class="btn btn-primary" id="logout">로그아웃</button>
+ </div>
 
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
   crossorigin="anonymous"></script>
 
-  <script type="module" src="upload.js"></script>
+  <script type="module" src="login.js"></script>
 
 
 </body>
